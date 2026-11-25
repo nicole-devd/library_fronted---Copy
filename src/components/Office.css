@@ -1,0 +1,200 @@
+
+.app-shell {
+    background-color: #171717;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.app-header {
+    text-align: center;
+}
+
+.app-header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.app-header p {
+    color: #cccccc;
+}
+
+.office-navigation {
+    text-align: center;
+    margin: 25px;
+}
+
+.nav-button {
+    padding: 8px 18px;
+    margin: 5px 10px;
+    cursor: pointer;
+    background-color: #292b34;
+    color: white;
+    border: 1px solid #555866;
+    border-radius: 5px;
+}
+
+.nav-button.active {
+    background-color: #555555;
+}
+
+.office-page {
+    text-align: center;
+}
+
+.office-card {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 700px;
+    border: 1px solid #555866;
+    border-radius: 8px;
+    background-color: #202127;
+}
+
+.office-card h2,
+.office-list-header h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.office-form {
+    display: grid;
+    grid-template-columns: 140px 250px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 15px auto;
+}
+
+.office-form label {
+    text-align: right;
+}
+
+.office-form input {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #555866;
+    border-radius: 5px;
+    background-color: #30313a;
+    color: white;
+}
+
+.office-form button {
+    grid-column: 2;
+    justify-self: start;
+}
+
+.office-button,
+.delete-button,
+.update-button {
+    padding: 6px 15px;
+    margin: 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+.office-button {
+    background-color: #555d86;
+}
+
+.delete-button {
+    background-color: #a64141;
+}
+
+.update-button {
+    background-color: #777777;
+}
+
+.update-button:disabled {
+    cursor: not-allowed;
+}
+
+.office-list-page {
+    max-width: 950px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.office-list-header {
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 300px;
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid #555866;
+    border-radius: 5px;
+    background-color: #30313a;
+    color: white;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.office-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #202127;
+    color: white;
+}
+
+.office-table th,
+.office-table td {
+    border: 1px solid #777777;
+    padding: 8px;
+    text-align: center;
+}
+
+.office-table th {
+    background-color: #333333;
+}
+
+.office-id {
+    word-break: break-all;
+}
+
+.action-buttons {
+    white-space: nowrap;
+}
+
+.no-results,
+.error-message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: #ff7777;
+}
+
+@media (max-width: 600px) {
+    .office-form {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .office-form label {
+        text-align: left;
+    }
+
+    .office-form button {
+        grid-column: 1;
+        justify-self: center;
+    }
+
+    .office-form input {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .search-input {
+        width: 90%;
+    }
+}

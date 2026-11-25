@@ -1,0 +1,211 @@
+
+#root {
+  text-align: left;
+}
+
+.app-shell {
+  min-height: 100vh;
+  padding: 25px;
+  background: #17181e;
+  color: #f1f1f1;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.app-header h1 {
+  color: #ffffff;
+  font-size: clamp(25px, 4vw, 38px);
+  margin: 15px 0;
+  letter-spacing: 0;
+}
+
+.app-header p {
+  color: #b7b7c0;
+  font-size: 16px;
+}
+
+.office-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid #555866;
+  border-radius: 5px;
+  background: #292b34;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: none;
+}
+
+.nav-button.active {
+  background: #555a73;
+  border-color: #858ba5;
+}
+
+.office-page {
+  display: grid;
+  gap: 25px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.office-card {
+  background: #202127;
+  border: 1px solid #41434e;
+  border-radius: 7px;
+  padding: 25px;
+}
+
+.office-card h2,
+.office-list-header h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 22px;
+  font-size: 25px;
+}
+
+.office-form {
+  display: grid;
+  gap: 12px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.office-form label {
+  color: #d0d0d7;
+  font-size: 15px;
+}
+
+.office-form input,
+.search-input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #555866;
+  border-radius: 5px;
+  background: #30313a;
+  color: white;
+  font-size: 15px;
+}
+
+.office-form input:focus,
+.search-input:focus {
+  outline: 2px solid #777eaa;
+}
+
+.office-button,
+.delete-button,
+.update-button {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.office-button {
+  background: #555d86;
+}
+
+.delete-button {
+  background: #a64141;
+}
+
+.update-button {
+  background: #777777;
+}
+
+.update-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.office-list-page {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.office-list-header {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  display: block;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.office-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #202127;
+  color: #eeeeee;
+  font-size: 14px;
+}
+
+.office-table th,
+.office-table td {
+  border: 1px solid #555866;
+  padding: 12px;
+  text-align: center;
+}
+
+.office-table th {
+  background: #30323c;
+  color: white;
+}
+
+.office-id {
+  word-break: break-all;
+  min-width: 180px;
+}
+
+.action-buttons {
+  white-space: nowrap;
+}
+
+.action-buttons button {
+  margin: 3px;
+}
+
+.no-results,
+.error-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.error-message {
+  color: #ff7777;
+}
+
+@media (max-width: 650px) {
+  .app-shell {
+    padding: 15px;
+  }
+
+  .office-card {
+    padding: 18px;
+  }
+
+  .office-table th,
+  .office-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
